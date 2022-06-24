@@ -12,7 +12,7 @@ function consulta() {
     .then(data => {
       //convertimos formato json cadena en objeto de javascript
       var Info = JSON.parse(data);
-      document.getElementById("series").innerHTML=Info.data.results[0].series.available;
-      document.getElementById("name_series").innerHTML=Info.data.results[0].series.items[number].name;
+      document.getElementById("stories").innerHTML=Info.data.results[0].stories.available;
+      document.getElementById("name_stories").innerHTML=Info.data.results[0].stories.items[number].name;
     }).catch((err) => {console.log("Info error: ", err);})
 }

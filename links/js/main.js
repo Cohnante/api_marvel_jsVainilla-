@@ -15,5 +15,5 @@ function consulta() {
         document.getElementById("imagen").innerHTML= `<img src="${Info.data.results[0].thumbnail.path+"/portrait_incredible.jpg"}" alt="...">`;
         document.getElementById("descripcion").innerHTML=Info.data.results[0].description;
         document.getElementById("Mod").innerHTML=Info.data.results[0].modified;
-      }).catch((err) => {console.log("Info error: ", err);})
+      }).catch((err) => {console.log("Info error: ", err);});
   }
