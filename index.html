@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./links/js/main.js"></script>
+    <link rel="stylesheet" href="./links/css/style.css">
 </head>
 <body>
     <div>
+        <header>
         <input type="text" id="marvel">
-        <button type="submit" onclick="consulta()" id="marvel">buscar</button>
-        <div class="container1">
-            <h1>Nombre</h1>
+        <button type="submit" onclick="consulta()" id="marvel" class="">buscar</button>
+        </header>
+        <div class="principal">
+            <h1>Nombre:</h1>
             <h1 id="Name"></h1>
-        </div>
-        <div class="container2">
-            <h1>imagen</h1>
-            <div id="imagen"></div>
-        </div>
-        <div class="container3"> 
-            <h1>descripcion</h1>
+            <h1>descripcion:</h1>
             <h1 id="descripcion"></h1>
-            <h1>Ultima modificacion</h1>
+            <h1>Ultima modificacion:</h1>
             <h1 id="Mod"></h1>
+            <h1>imagen:</h1>
+            <div id="imagen">
         </div>
     </div>
+    <div class="links">
     <a href="./links/html/comics.html">Comics consulta</a>
     <a href="./links/html/series.html">Series consulta</a>
     <a href="./links/html/stories.html">Historias consulta</a>
     <a href="https://github.com/Cohnante/api_marvel_jsVainilla-">github</a>
+    </div>
 </body>
 </html>
